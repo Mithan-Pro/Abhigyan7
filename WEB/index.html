@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Stunning Website</title>
+<style>
+  /* Reset & base styles */
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    line-height: 1.6;
+    min-height: 100vh;
+    overflow-x: hidden;
+
+    /* Modern animated gradient background */
+    background: linear-gradient(135deg, #ff6ec4, #7873f5, #42e695, #3bb2b8);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+  }
+
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0,0,0,0.4);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    animation: slideDown 1s ease-out;
+  }
+  header h1 { font-size: 2rem; letter-spacing: 2px; }
+  nav a {
+    color: #fff; margin-left: 20px; text-decoration: none; font-weight: 600;
+    transition: color 0.3s;
+  }
+  nav a:hover { color: #ffd700; }
+
+  /* Hero section */
+  .hero {
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    height: 90vh; text-align: center; padding: 0 20px;
+    animation: fadeIn 2s ease-in;
+  }
+  .hero h2 { font-size: 3rem; margin-bottom: 20px; animation: zoomIn 1.5s ease-in-out; }
+  .hero p { max-width: 600px; margin-bottom: 30px; }
+  .btn {
+    padding: 12px 30px; background: #ffd700; color: #000;
+    border-radius: 30px; font-weight: bold; text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .btn:hover { transform: scale(1.1); box-shadow: 0 8px 20px rgba(0,0,0,0.3); }
+
+  /* Contact section */
+  .contact {
+    padding: 60px 20px; text-align: center;
+  }
+  .contact a {
+    padding: 12px 25px; background: #ffd700; color: #000;
+    border-radius: 30px; font-weight: bold; text-decoration: none;
+    transition: transform 0.3s;
+  }
+  .contact a:hover { transform: scale(1.1); }
+
+  /* Footer */
+  footer { background: rgba(0,0,0,0.6); padding: 20px; text-align: center; animation: fadeIn 2s ease-in; }
+
+  /* Animations */
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes zoomIn { 0% { transform: scale(0.8); opacity: 0; } 100% { transform: scale(1); opacity: 1; } }
+  @keyframes slideDown { 0% { transform: translateY(-100%); } 100% { transform: translateY(0); } }
+
+  /* Responsive */
+  @media(max-width: 768px) {
+    header { flex-direction: column; gap: 10px; }
+    .hero h2 { font-size: 2.2rem; }
+  }
+  .marquee-container {
+    width: 80%;
+    overflow: hidden;
+    border: 2px solid #ffd700;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.3);
+  }
+
+  .marquee-text {
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 100%;
+    animation: scroll 5s linear infinite; /* Adjust speed by changing duration */
+    font-size: 1.5rem;
+  }
+
+  @keyframes scroll {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Abhigyan</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <marquee scorllamount="2000000000"><h2>Welcome to Abhigyan's Website</h2></marquee>
+    <p>Hi I am Abhigyan Chakraborty, wanna know more about me, click ABOUT ME..</p>
+    <a href="second.html" class="btn">ABOUT ME</a>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>Have a project or idea? Let's make it happen!
+        <br><br>Call to: +91 7980973545  OR  mail to: chevycustomed@gmail.com
+    </p>
+    
+  </section>
+
+  <footer>
+    <p>© 2025 MyStunningSite. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

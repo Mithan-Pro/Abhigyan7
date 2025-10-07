@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me - Abhigyan</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    min-height: 100vh;
+    margin: 0;
+    line-height: 1.6;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* Same modern animated gradient background */
+    background: linear-gradient(135deg, #ff6ec4, #7873f5, #42e695, #3bb2b8);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+  }
+
+  h1 { font-size: 3rem; margin-bottom: 20px; }
+  p { max-width: 600px; margin-bottom: 30px; font-size: 1.2rem; line-height: 1.6; }
+  a {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #ffd700;
+    color: #000;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.3s;
+  }
+  a:hover { transform: scale(1.1); }
+
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  @media(max-width: 768px){
+    h1 { font-size: 2.2rem; }
+    p { font-size: 1rem; }
+  }
+</style>
+</head>
+<body>
+  <h1>About Me</h1>
+
+  <div class="marquee-container">
+    <div class="marquee-text">
+      🚗 CARS ARE THE BEST THING EXISTING IN OUR WORLD 🚗
+    </div>
+  </div>
+
+  <p>
+    Hi! I’m Abhigyan Chakraborty, a car guy and designer. I love working on car modifications,
+    creating concept designs, and bringing automotive visions to life. <br><br>
+    I've made this website to show my dad that I always don't waste time on my PC, I also know how to make these codes..
+  </p>
+
+  <a href="new.html">⬅ Back to Home</a>
+</body>
+</html>
